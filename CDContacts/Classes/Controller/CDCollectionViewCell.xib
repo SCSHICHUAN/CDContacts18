@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentrer" id="gTV-IL-0wX" customClass="CDCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="270"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9g-WM-bTb">
+                        <rect key="frame" x="0.0" y="250" width="250" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7d6-a2-bi0">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="e9g-WM-bTb" firstAttribute="top" secondItem="7d6-a2-bi0" secondAttribute="bottom" constant="2" id="1vv-vT-EPo"/>
+                <constraint firstAttribute="trailing" secondItem="e9g-WM-bTb" secondAttribute="trailing" id="3MQ-s9-eWA"/>
+                <constraint firstAttribute="trailing" secondItem="7d6-a2-bi0" secondAttribute="trailing" id="6Id-Wf-wBL"/>
+                <constraint firstItem="e9g-WM-bTb" firstAttribute="top" secondItem="7d6-a2-bi0" secondAttribute="bottom" id="8Rw-gC-Z5R"/>
+                <constraint firstAttribute="bottom" secondItem="e9g-WM-bTb" secondAttribute="bottom" id="ADo-wZ-11H"/>
+                <constraint firstItem="7d6-a2-bi0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Uh9-15-Q7N"/>
+                <constraint firstItem="7d6-a2-bi0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="d2x-DJ-ozy"/>
+                <constraint firstItem="e9g-WM-bTb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="epV-hK-u7P"/>
+            </constraints>
+            <size key="customSize" width="144" height="235"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1vv-vT-EPo"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="headimageView" destination="7d6-a2-bi0" id="rWx-ek-3Ao"/>
+                <outlet property="nameLable" destination="e9g-WM-bTb" id="MEb-mz-uWi"/>
+            </connections>
+            <point key="canvasLocation" x="829" y="541"/>
+        </collectionViewCell>
+    </objects>
+</document>

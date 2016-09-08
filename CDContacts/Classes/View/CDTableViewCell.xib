@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="146" id="KGk-i7-Jjw" customClass="CDTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OL7-CD-Pwa">
+                        <rect key="frame" x="145" y="53" width="134" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dG6-XC-bp1">
+                        <rect key="frame" x="8" y="5" width="135" height="135"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="135" id="4Jt-Gq-5eW"/>
+                            <constraint firstAttribute="height" constant="135" id="gUi-p8-rDy"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBm-pl-8nR">
+                        <rect key="frame" x="247" y="52" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="M2Z-w0-qD0"/>
+                            <constraint firstAttribute="height" constant="40" id="tec-ye-qhG"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="tabbar_music_selected"/>
+                        <connections>
+                            <action selector="playButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="07E-Un-LgI"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dG6-XC-bp1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="Ghz-ZB-rxK"/>
+                    <constraint firstItem="xBm-pl-8nR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="44" id="Jy7-qy-Fih"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xBm-pl-8nR" secondAttribute="trailing" constant="25" id="PaK-hX-SQW"/>
+                    <constraint firstItem="dG6-XC-bp1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bRu-IC-GHo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="dG6-XC-bp1" id="7UQ-eq-xKa"/>
+                <outlet property="nameLabel" destination="OL7-CD-Pwa" id="B46-Lm-jrL"/>
+                <outlet property="playButtonOutlet" destination="xBm-pl-8nR" id="Awm-Y6-yla"/>
+            </connections>
+            <point key="canvasLocation" x="266" y="256"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tabbar_music_selected" width="30" height="30"/>
+    </resources>
+</document>
